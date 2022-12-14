@@ -1,0 +1,459 @@
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+ul,
+li {
+  display: inline;
+  list-style: none;
+  overflow: hidden;
+  padding: 40px;
+}
+
+/* body */
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Amiri', serif;
+  font-size: 18px;
+}
+
+/* header */
+
+header {
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: end;
+  left: 0;
+  margin-top: 0px;
+  padding: 2.5em;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.nav-link {
+  font-family: 'Zen Dots', cursive;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 240px;
+  margin-left: 11%;
+}
+
+.nav-link2:hover {
+  color: #26dcfc;
+}
+
+.nav-link3:hover {
+  color: #f560d4;
+}
+
+.nav-link4:hover {
+  color: #fadd39;
+}
+
+.eye {
+    height: 20Px;
+    display: inline-flex;
+    margin-left: 0%;
+    margin-right: -11%;
+  
+}
+
+
+/* sections */
+
+.section-about{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 870px;
+  justify-content: space-evenly;
+  text-align: left;
+
+}
+
+.principal-title {
+  align-items: center;
+  background: linear-gradient(
+    175deg,
+    #a0e9ff 15%,
+    #a162e8 30%,
+    #f093b0 55%,
+    #edca85 35%
+  );
+  color: #fff;
+  display: block;
+  font-family: 'Zen Dots', cursive;
+  font-size: xxx-large;
+  letter-spacing: -1.5px;
+  line-height: 110%;
+  max-width: min-content;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: -45%;
+  
+}
+
+/* Button WHAT I DO MADE WITH LOVE */
+
+.btn {
+  width: 188px;
+  height: 55px;
+  background: linear-gradient( 175deg, #a0e9ff 15%, #a162e8 30%, #f093b0 55%, #edca85 35% );
+  color: #ffffff;
+  position: absolute;
+  top: 60%;
+  left: 34%;
+  transform: translate(-50%, -50%);
+  border-radius: 28px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.btn::before{
+  content: 'What I Do';
+  color: rgb(0, 0, 0);
+  font-family: 'Century Gothic', sans-serif;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  transition: all .5s ease-in-out;
+  text-transform: uppercase;
+  
+}
+
+.btn:hover::before{
+  top: -30px;
+}
+
+.btn::after {
+  font-family: 'FontAwesome';
+  content: "\f004";
+  font-size: 40px;
+  color: red;
+  position: absolute;
+  top: 150%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  transition: all .5s ease-in-out;
+}
+
+.btn:hover::after {
+  top: 50%;
+}
+
+/* IMG About me*/
+
+.about-profile{
+    border-radius: 212px;
+    width: 62%;
+    background-color: white;
+    padding: 5px;
+    margin-top: -46%;
+    margin-left: 86%;
+  }
+
+  .info-about-me {
+    font-size: 18px;
+    margin-top: 26px;
+    color: #a0e9ff;
+    margin-left: -45%;
+  }
+  
+
+/* Conocimientos */
+
+.section-skills{
+  background: #a0e9ff;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 635px;
+  padding: 384px 170px 100px;
+}
+
+.my-skills {
+  color: #000000;
+    font-size: 36px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 268px;
+    margin-left: 150px;
+    margin-right: 200px;
+    padding: 0px;
+}
+
+.title-skills{
+  margin-top: -14%;
+  margin-left: 9%;
+}
+
+
+.icons-knowledge{
+  display: flex;
+  flex-wrap: wrap;
+  
+  margin-top: 50px;
+  border-radius: 8px;
+  margin-left: 248px;
+}
+
+.icon-style{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 250px;
+  height: 250px;
+  margin: 15px;
+  background-color: #000000;
+  border: 1px solid #000000;
+  transition: 0s;
+  box-shadow: 0 2px 0 2px rgb(73 80 87 / 35%);
+}
+
+.icon-style:hover{
+    background-color: #a0e9ff;
+    border-color: 2px solid #000000 ;
+    color: #000000;
+}
+
+
+/*frase*/
+
+.quote-section{
+  background: #a162e8;
+  display: flex;
+  font-family: 'Frijole', cursive;
+  justify-content: center;
+  margin-top: 10%;
+  margin-bottom: 90px;
+  text-align: center;
+  padding: 100px 40px 150px;
+}
+
+.motivational-phrase{
+  font-family: 'Frijole', cursive;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+/*Autor de la frase*/
+
+.author-phrase{
+  font-family: 'Frijole', cursive;
+  font-size: 30px;
+  margin-top: 46px;
+  text-transform: uppercase;
+}
+
+/* Proyectos */
+
+.section{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: max-content;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  background-color: #f093b0;
+}
+
+.proyect-title{
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-size: 222%;
+  margin-top: -89%;
+  margin-left: 29%;
+}
+
+.context-proyects {
+  display: flex;
+  margin-top: 3%;
+  align-self: center;
+  font-size: 90%;
+  margin-left: -39%;
+  margin-right: -10%;
+  max-width: max-content;
+  padding: 13%;
+}
+
+.proyects{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+  border-radius: 8px; 
+}
+
+.icon-proyects{
+    color: #a162e8;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 310px;
+    height: 310px;
+    margin: 15px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+  }
+
+  .icon-img-proyect{
+    border-radius: 30px;
+    width: 300px;
+    
+  }
+
+/* redes contact me*/
+
+.contact-me{
+  background: #edca85;
+  height: max-content;
+  margin-top: 300px;
+  margin-bottom: -30px;
+  
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+  border-radius: 8px; 
+  height: 700px;
+
+}
+
+.redes{
+  display: flex;
+}
+
+
+.title-contact-me{
+  font-size: x-large;
+  margin-left: 12%;
+  margin-top: 3%;
+}
+
+.footer-contact-me{
+  margin-top: 30px;
+}
+
+.network-list{
+  display: flex;
+  flex-direction: row;
+  margin-left: -14%;
+  color: #8302da;
+  align-items: baseline;
+  margin-top: 16%;
+
+}
+
+.text-contact-me{
+  display: flex;
+  margin-top: 190px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Form */
+
+.name-form{
+  display: flex;
+  align-items: center;
+  transition: width 0.4s ease-in-out;
+}
+
+.container-form{
+  display: flex;
+  color: #9602f8;
+  /*justify-content: center;*/
+  flex-direction: column;
+  margin-left: 10%;
+  margin-top: 23%;
+  text-transform: uppercase;
+}
+
+#input{
+  height: 2rem;
+  width: 20rem;
+  margin: 1rem;
+  border: 3px solid #9602f8;
+  border-radius: 20px;
+} 
+
+#input-msj{
+  height: 6rem;
+  width: 20rem;
+  margin: 1rem;
+  border: 3px solid #9602f8;
+  border-radius: 20px;
+}
+
+.button-profile{
+  border-radius: 20px;
+  border: 3px solid #9602f8;
+  border-radius: 20px;
+  width: 8em;
+  height: 2em;
+  display: flex;
+  justify-content: center;
+  margin-left: 120px;
+}
+
+.container-form:hover{
+  color: #9602f8 ;
+}
+
+
+/* footer*/
+
+footer{
+  padding: 50px;
+  margin-top: 100px;
+  margin-bottom: -30px;
+}
+
+.footer-list{
+  display: flex;
+  justify-content: center;
+  font-family: 'Frijole', cursive;
+  font-size: larger;
+}
+
+.footer-social{
+  display: flex;
+  justify-content: center;
+  padding: 50px; 
+}
+
+.author-page{
+  display: flex;
+  justify-content: center;
+  color: #a162e8;
+  font-family: 'Frijole', cursive;
+}
